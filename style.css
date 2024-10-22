@@ -1,0 +1,89 @@
+body {
+  margin: 0 0 20px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e4f3eb;
+  font-size: 16px;
+}
+
+header img {
+  width: 100%;
+}
+
+section {
+  padding: 20px;
+}
+
+section p {
+  font-family: "Roboto", sans-serif; /* Added Google font and changed font-family. */
+  font-size: clamp(1rem, 2vw, 1.3rem);  /* Changed font-size to be responsive. */
+  color: #06170e;
+}
+
+#carpetForm {
+  margin: auto;
+  padding: 30px;
+  max-width: 1000px; /* Changed from 800 to 1000px. */
+  background-color: rgba(255, 255, 255, 0.671);
+}
+
+#carpetForm select,
+#carpetForm input {
+  width: 100%;
+  margin-bottom: 7px;
+}
+
+#form-footer {
+  padding: 20px;
+  display: flex; 
+  justify-content: space-between;
+  /* Added display flex and space-between. */
+}
+
+button {
+  color: white;
+  background-color: #229956;
+  outline: none;
+  border: none;
+  font-size: 24px;
+  height: 15vh; /* Added responsive height. */
+  width: 35vw; /* Added responsive width. */
+  margin-left: 20px; /* Added left margin. */
+}
+
+@media (max-width: 767px) {
+  button {
+    font-size: 18px;
+  }
+}
+/* Added media query for button font size on smaller screens. */
+
+#result-container {
+  position: relative;
+  height: 100px;
+  background-color: #e4f3eb;
+  width: 32vw; /* Added responsive width. */
+  text-align: center; /* Made text centered. */
+  height: 15vh; /* Added responsive height. */
+  margin-right: 20px; /* Added right margin. */
+}
+
+#result-container span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  font-size: 18px;
+  transform: translateX(-50%);
+}
+
+#result {
+  font-size: 50px;
+  line-height: 120px;
+  text-align: center;
+}
+
+.note {
+  display: block; /* Added a class for strong and made it block element. */
+  text-align: center; /* Centered the text. */
+  font-size: clamp(1rem, 2vw, 1.1rem); /* Added responsive font size. */
+  color: #06170e;
+}
